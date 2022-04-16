@@ -1,0 +1,13 @@
+:root {
+    --main-font: 'Open Sans';
+    --heading-font: 'Open Sans';
+    --main-color: #47494A;
+    --heading-color: #47494A;
+    --heading-font-weight: 400;
+    --link-hover-color: #146CDA;
+    --link-color: #47494A;
+    --button-color: #FFFFFF;
+    --button-hover-color: #FFFFFF;
+    --button-bg-color: #282828;
+    --button-bg-hover-color: #146CDA
+}

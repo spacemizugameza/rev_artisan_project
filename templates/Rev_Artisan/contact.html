@@ -1,0 +1,66 @@
+{% extends 'Rev_Artisan/base.html' %}
+{% block content %}
+<div id="information-contact" class="container">
+    <ul class="breadcrumb">
+        <li><a href="http://rozer4.demo2.towerthemes.com/"><i class="fa fa-home"></i></a></li>
+        <li><a href="http://rozer4.demo2.towerthemes.com/index.php?route=information/contact">Contact Us</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <h1>Contact Us</h1>
+            <h3>Our Location</h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3"><strong>Rozer 4</strong><br />
+                            <address>
+                                dasdad<br />
+                                adasd
+                            </address>
+                            <a href="https://maps.google.com/maps?q=Liechtenstein&hl=en-gb&t=m&z=15" target="_blank"
+                                class="btn btn-info"><i class="fa fa-map-marker"></i> View Google Map</a>
+                        </div>
+                        <div class="col-sm-3"><strong>Telephone</strong><br>
+                            1125689<br />
+                            <br />
+                        </div>
+                        <div class="col-sm-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="http://rozer4.demo2.towerthemes.com/index.php?route=information/contact" method="post"
+                enctype="multipart/form-data" class="form-horizontal">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <div class="form-group required">
+                        <label class="col-sm-2 control-label" for="input-name">Your Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="name" value="sohan" id="input-name" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="col-sm-2 control-label" for="input-email">E-Mail Address</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="email" value="snoxsnox7@gmail.com" id="input-email"
+                                class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label class="col-sm-2 control-label" for="input-enquiry">Enquiry</label>
+                        <div class="col-sm-10">
+                            <textarea name="enquiry" rows="10" id="input-enquiry" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <div class="buttons">
+                    <div class="pull-right">
+                        <input class="btn btn-primary" type="submit" value="Submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

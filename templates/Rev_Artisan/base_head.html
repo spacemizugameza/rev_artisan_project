@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rev Artisan</title>
+    <!-- <base href="http://rozer4.demo2.towerthemes.com/" /> -->
+    
+    <link href="{% static 'Rev_Artisan/bootstrap.min.check.css' %}" rel="stylesheet" media="screen" />
+    <link href="{% static 'Rev_Artisan/bootstrap.css' %}" rel="stylesheet" media="screen" />
+    <link href="{% static 'Rev_Artisan/date_time_picker.css' %}" type="text/css" rel="stylesheet" media="screen" />
+    <link href="{% static 'Rev_Artisan/swiper.css' %}" rel="stylesheet" type="text/css" />
+    <!-- icon font -->
+    <link href="{% static 'Rev_Artisan/font_awosome.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'Rev_Artisan/ionicon.css' %}" rel="stylesheet" type="text/css" />
+
+    <!-- end icon font -->
+    <!-- end -->
+    <link href="{% static 'Rev_Artisan/stylesheet.css' %}" rel="stylesheet">
+    <link href="{% static 'Rev_Artisan/filter.css' %}" rel="stylesheet">
+    <link href="{% static 'Rev_Artisan/header.css' %}" rel="stylesheet">
+    <link href="{% static 'Rev_Artisan/theme.css' %}" rel="stylesheet">
+    <link href="{% static 'Rev_Artisan/theme.font.css' %}" rel="stylesheet">
+    <link href="{% static 'Rev_Artisan/simple_line_icon.css' %}" rel="stylesheet" type="text/css" />
+    <script src="{% static 'java_s/jquery.js' %}"></script>
+    <script src="{% static 'java_s/filter.js' %}"></script>
+    <script src="{% static 'java_s/swiper.min.js' %}"></script>
+    <!-- <script src="catalog/view/javascript/plaza/newsletter/mail.js"></script> -->
+    <script src="{% static 'java_s/ajax_login.js' %}"></script>
+    <script src="{% static 'java_s/moment.min.js' %}"></script>
+    <script src="{% static 'java_s/moment.local.min.js' %}"></script>
+    <script src="{% static 'java_s/bootstrap-datetimepicker.min.js' %}"></script>
+    <script src="{% static 'java_s/bootstrap.min.js' %}"></script>
+    <script src="{% static 'java_s/jquery.nivo.slider.js' %}"></script>
+    <script src="{% static 'java_s/menu.js' %}"></script>
+    <script src="{% static 'java_s/common.js' %}"></script>
+    <link href="http://rozer4.demo2.towerthemes.com/image/catalog/cart.png" rel="icon" />
+    <!-- Quick view -->
+    <!-- <script src="{% static 'java_s/cloud-zoom.min.js' %}"></script> -->
+    <!-- <script src="{% static 'java_s/zoom.js' %}"></script> -->
+    <!-- <script src="{% static 'java_s/quickview.js' v=2.0 %}"></script> -->
+    <link href="{% static 'Rev_Artisan/quick_view.css' %}" rel="stylesheet" type="text/css" />
+    <!-- General -->
+    <!-- Sticky Menu -->
+    <script>
+        $(document).ready(function () {
+            var height_box_scroll = $('.scroll-fix').outerHeight(true);
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 800) {
+                    $('.scroll-fix').addClass("scroll-fixed");
+                    $('body').css('padding-top', height_box_scroll);
+                } else {
+                    $('.scroll-fix').removeClass("scroll-fixed");
+                    $('body').css('padding-top', 0);
+                }
+            });
+        });
+    </script>
+    <!-- Scroll Top -->
+    <script>
+        $("#back-top").hide();
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > $('body').height() / 3) {
+                    $('#back-top').fadeIn();
+                } else {
+                    $('#back-top').fadeOut();
+                }
+            });
+            $('#back-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    </script>
+    <!-- Advance -->
+    <!-- Bootstrap Js -->
+    <!-- <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
+
+

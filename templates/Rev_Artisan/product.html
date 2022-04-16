@@ -1,0 +1,259 @@
+{% extends 'Rev_Artisan/base.html' %}
+{% block content %}
+<div id="product-category" class="container layer-category">
+    <div class="show-sidebar hidden-lg hidden-md">
+        <i class="fa fa-filter"></i>
+        <i class="ion-android-close"></i>
+    </div>
+    <div class="layered-navigation-block"></div>
+
+
+    <div class="row">
+
+        <div id="content" class="col-sm-12">
+            <ul class="breadcrumb">
+                <li><a href="http://rozer4.demo2.towerthemes.com/"><i class="fa fa-home"></i></a></li>
+                <li><a href="http://rozer4.demo2.towerthemes.com/electronics">CAR SPARES</a></li>
+            </ul>
+            <h1>CAR SPARES</h1>
+
+
+
+            <!-- <p class="text-refine">Refine Search</p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a
+                                href="http://rozer4.demo2.towerthemes.com/index.php?route=product/category&amp;path=59_134">Batteries
+                                (0)</a></li>
+                        <li><a
+                                href="http://rozer4.demo2.towerthemes.com/index.php?route=product/category&amp;path=59_66">Bottoms
+                                (13)</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a
+                                href="http://rozer4.demo2.towerthemes.com/index.php?route=product/category&amp;path=59_127">Camera
+                                &amp; Photo (0)</a></li>
+                        <li><a
+                                href="http://rozer4.demo2.towerthemes.com/index.php?route=product/category&amp;path=59_63">Hot
+                                Categories (11)</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a
+                                href="http://rozer4.demo2.towerthemes.com/index.php?route=product/category&amp;path=59_64">Outerwear
+                                &amp; Jackets (10)</a></li>
+                        <li><a
+                                href="http://rozer4.demo2.towerthemes.com/index.php?route=product/category&amp;path=59_65">Weddings
+                                &amp; Events (2)</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- <br />
+            <div class="custom-category"> -->
+                <!-- Uncomment for filters -->
+                <!-- <div class="tool-bar">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" onclick="category_view.changeView('grid', 1, 'btn-grid-1')"
+                                    class="btn btn-default btn-custom-view btn-grid-1" data-toggle="tooltip"
+                                    data-placement="top" title="1">1</button>
+                                <button type="button" onclick="category_view.changeView('grid', 2, 'btn-grid-2')"
+                                    class="btn btn-default btn-custom-view btn-grid-2" data-toggle="tooltip"
+                                    data-placement="top" title="2">2</button>
+                                <button type="button" onclick="category_view.changeView('grid', 3, 'btn-grid-3')"
+                                    class="btn btn-default btn-custom-view btn-grid-3" data-toggle="tooltip"
+                                    data-placement="top" title="3">3</button>
+                                <button type="button" onclick="category_view.changeView('grid', 4, 'btn-grid-4')"
+                                    class="btn btn-default btn-custom-view btn-grid-4" data-toggle="tooltip"
+                                    data-placement="top" title="4">4</button>
+                                <button type="button" onclick="category_view.changeView('grid', 5, 'btn-grid-5')"
+                                    class="btn btn-default btn-custom-view btn-grid-5" data-toggle="tooltip"
+                                    data-placement="top" title="5">5</button>
+                                <button type="button" onclick="category_view.changeView('list', 0, 'btn-list')"
+                                    class="btn btn-default btn-custom-view btn-list" data-toggle="tooltip"
+                                    data-placement="top" title="List"></button>
+                                <input type="hidden" id="category-view-type" value="grid" />
+                                <input type="hidden" id="category-grid-cols" value="4" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="form-group"><a
+                                    href="http://rozer4.demo2.towerthemes.com/index.php?route=product/compare"
+                                    id="compare-total" class="btn btn-link">Product Compare (0)</a></div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="form-group input-group input-group-sm">
+                                <label class="input-group-addon" for="input-sort">Sort By:</label>
+                                <select id="input-sort" class="form-control" onchange="ptfilter.filter(this.value);">
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=p.sort_order&order=ASC"
+                                        selected="selected">Default</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=pd.name&order=ASC">
+                                        Name (A - Z)</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=pd.name&order=DESC">
+                                        Name (Z - A)</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=p.price&order=ASC">
+                                        Price (Low &gt; High)</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=p.price&order=DESC">
+                                        Price (High &gt; Low)</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=rating&order=DESC">
+                                        Rating (Highest)</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=rating&order=ASC">
+                                        Rating (Lowest)</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=p.model&order=ASC">
+                                        Model (A - Z)</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&sort=p.model&order=DESC">
+                                        Model (Z - A)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="form-group input-group input-group-sm">
+                                <label class="input-group-addon" for="input-limit">Show:</label>
+                                <select id="input-limit" class="form-control" onchange="ptfilter.filter(this.value);">
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&limit=12"
+                                        selected="selected">12</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&limit=25">
+                                        25</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&limit=50">
+                                        50</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&limit=75">
+                                        75</option>
+                                    <option
+                                        value="http://rozer4.demo2.towerthemes.com/index.php?route=plaza/filter/category&path=59&limit=100">
+                                        100</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    {% if products %}
+                    {% for product in products %}
+                    <div class="product-layout product-list col-xs-12 product-items">
+                        <div class="product-thumb">
+                            <div class="product-item">
+
+                                <div class="image rotate-image-container">
+                                    <div class="inner">
+
+                                        <a
+                                            href="{% url 'product-detail' product.slug %}">
+                                            <img src="{% if product.image %}{{product.image.url}}{% endif %}"
+                                                alt="{{product.title}}"
+                                                title="{{product.title}}"
+                                                class="img-responsive img-default-image" />
+                                            <img src="{% if product.image %}{{product.image.url}}{% endif %}"
+                                                alt="{{product.title}}"
+                                                title="{{product.title}}"
+                                                class="img-responsive img-rotate-image" />
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="caption">
+                                        <div class="inner">
+                                            <p class="manufacture-product">
+                                                <a
+                                                href="{% url 'product-detail' product.slug %}">{{product.brand}}</a>
+                                            </p>
+                                            <h4><a
+                                                href="{% url 'product-detail' product.slug %}">{{product.name}}</a>
+                                            </h4>
+                                            <!-- <div class="rating">
+                                                <span class="icon-ratings"><i class="icon-rating icon-rating-x"></i></span>
+                                                <span class="icon-ratings"><i class="icon-rating icon-rating-x"></i></span>
+                                                <span class="icon-ratings"><i class="icon-rating icon-rating-x"></i></span>
+                                                <span class="icon-ratings"><i class="icon-rating icon-rating-x"></i></span>
+                                                <span class="icon-ratings"><i class="icon-rating icon-rating-x"></i></span>
+                                            </div> -->
+                                            <div>
+                                                <p class="price"> ${{product.price}}
+                                                </p>
+                                            </div>
+                                            <div class="box-cart">
+                                                <button type="button" class="button-cart" title="Add to Cart"
+                                                onclick="location.href='{% url 'add-to-cart' product.slug %}'"><span>Add to Cart</span></button>
+                                                <!-- <a href="{% url 'add-to-cart' product.slug %}" class="button-cart" title="Add to Cart"><span>Add to Cart</span></a> -->
+                                            </div>
+                                            <p class="product-description">{{product.description}}</p>
+                                            <div class="button-group">
+                                            <div class="inner">
+                                                <!-- <button type="button" class="button-cart" title="Add to Cart"
+                                                    ><span>Add to Cart</span></button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="box-list">
+                                    <div class="inner">
+                                        <p class="text-available">Availability:<span>{% if product.available %}In Stock{% else %}Out of Stock{% endif %}</span></p>
+                                        <p class="price"> ${{product.price}}
+                                        </p>
+                                        <div class="box-cart-list"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="tool-bar-bottom">
+                    <div class="row ">
+                        <div class="col-sm-6 text-left ajax_pagination">
+                            <ul class="pagination">
+                                <li class="active"><span>1</span></li>
+                                <li><a
+                                        href="#">2</a>
+                                </li>
+                                <li><a
+                                        href="#">&gt;</a>
+                                </li>
+                                <li><a
+                                        href="#">&gt;|</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 text-right">Showing 1 to 12 of 19 (2 Pages)</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.show-sidebar').click(function () {
+                if ($(this).hasClass('opened')) {
+                    $(this).removeClass('opened');
+                } else {
+                    $(this).addClass('opened');
+                }
+                $('.layer-category #column-left,.layer-category #column-right').toggle();
+            });
+        });
+    </script>
+</div>
+
+{% endblock content %}

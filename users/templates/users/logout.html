@@ -1,0 +1,22 @@
+{% extends 'Rev_Artisan/base_head.html' %}
+{% block content %}
+<div id="common-success" class="container">
+    <ul class="breadcrumb">
+        <li><a href="{% url 'home-page' %}"><i class="fa fa-home"></i></a></li>
+        <li><a href="{% url 'login' %}">Account</a></li>
+        <li><a href="http://rozer4.demo2.towerthemes.com/index.php?route=account/logout">Logout</a></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <h1>Account Logout</h1>
+            <p>You have been logged out from your account.</p>
+            <!-- <p>Your shopping cart has been saved, the items inside it will be restored whenever you log back
+                into your account.</p> -->
+            <div class="buttons">
+                <div class="pull-right"><a href="{% url 'login' %}"
+                        class="btn btn-primary">Continue</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -27,6 +27,7 @@ urlpatterns = [
     path('Rev_Artisan/', include('Rev_Artisan.urls')),
     path('register/', include('users.urls')),
     path('products/', include('products.urls')),
+    path('payment/', include('payment.urls')),
 
     path('login/',auth_view.LoginView.as_view(template_name='users/login.html', form_class=LoginForm),name='login'),
     path('logout/',auth_view.LogoutView.as_view(template_name='users/logout.html'),name='logout'),

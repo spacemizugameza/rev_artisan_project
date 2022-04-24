@@ -216,7 +216,7 @@
                                         <div id="cart" class="btn-group btn-block">
 
                                             <button type="button" class="btn btn-inverse btn-block btn-lg"
-                                                onclick="location.href='{% url 'cart' %}'"><span class="badge bg-primary rounded-pill">{{ request.user.cart|length }}</span></button>
+                                                onclick="location.href='{% url 'cart' %}'"><span class="badge bg-primary rounded-pill">{{ cart|length}}</span></button>
 
                                         </div>
                                     </div>
@@ -251,7 +251,7 @@
                                             </div>
                                             <div class="search-ajax">
                                                 <div class="ajax-loader-container" style="display: none;">
-                                                    <img src="http://rozer4.demo2.towerthemes.com/image/catalog/ajax-loader.gif"
+                                                    <img src="#"
                                                         alt="search-ajax" class="ajax-load-img" width="30"
                                                         height="30" />
                                                 </div>

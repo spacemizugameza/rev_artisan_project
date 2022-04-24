@@ -67,6 +67,9 @@ class Cart(models.Model):
         return super(Cart, self).save(*args, **kwargs)
 
 # class Delivery_Details(models.Model):
+
+
+    
     
 
 

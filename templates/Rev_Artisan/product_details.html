@@ -2,8 +2,8 @@
 {% block content %}
 <div id="product-product" class="container">
     <ul class="breadcrumb">
-        <li><a href="http://rozer4.demo2.towerthemes.com/"><i class="fa fa-home"></i></a></li>
-        <li><a href="http://rozer4.demo2.towerthemes.com/720-degree-panoramic-hd-360-video-vr-cameras-dual">{{product.name}}</a></li>
+        <li><a href="{% url 'home-page' %}"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">{{product.name}}</a></li>
     </ul>
     <div class="row">
         <div id="content" class="col-sm-12">
@@ -25,7 +25,7 @@
                                     alt="{{product.name}}" />
                             </a>
                         </div>
-                        <div class="additional-container">
+                        <!-- <div class="additional-container">
                             <div class="swiper-viewport">
                                 <div class="additional-images swiper-container">
                                     <div class="swiper-wrapper">
@@ -113,7 +113,7 @@
                                     <div class="swiper-button-prev additional-button-prev"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                     <div class="col-sm-6 col-lg-6 product-info-details">
@@ -155,7 +155,7 @@
                                         class="form-control" />
                                     <input type="hidden" name="product_id" value="36" />
                                     <button type="button" id="button-cart" data-loading-text="Loading..."
-                                        class="btn btn-primary btn-lg btn-block">Add to Cart</button>
+                                        class="btn btn-primary btn-lg btn-block" onclick="location.href='{% url 'add-to-cart' product.slug %}'">Add to Cart</button>
 
 
                                 </div>
@@ -169,46 +169,20 @@
                 <div class="inner">
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#tab-description" data-toggle="tab">Description</a></li>
-                        <li><a href="#tab-review" data-toggle="tab">Reviews (1)</a></li>
+                        <!-- <li><a href="#tab-review" data-toggle="tab">Reviews (1)</a></li> -->
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab-description">
                             <div>
                                 <p>
-                                    <strong>Video in your pocket.</strong>
+                                    <strong>{{product.name}}</strong>
                                 </p>
                                 <p>
-                                    Its the small iPod with one very big idea: video. The worlds most popular music
-                                    player now lets you enjoy movies, TV shows, and more on a two-inch display thats 65%
-                                    brighter than before.</p>
-                                <p>
-                                    <strong>Cover Flow.</strong>
-                                </p>
-                                <p>
-                                    Browse through your music collection by flipping through album art. Select an album
-                                    to turn it over and see the track list.<strong>&nbsp;</strong></p>
-                                <p>
-                                    <strong>Enhanced interface.</strong>
-                                </p>
-                                <p>
-                                    Experience a whole new way to browse and view your music and video.</p>
-                                <p>
-                                    <strong>Sleek and colorful.</strong>
-                                </p>
-                                <p>
-                                    With an anodized aluminum and polished stainless steel enclosure and a choice of
-                                    five colors, iPod nano is dressed to impress.</p>
-                                <p>
-                                    <strong>iTunes.</strong>
-                                </p>
-                                <p>
-                                    Available as a free download, iTunes makes it easy to browse and buy millions of
-                                    songs, movies, TV shows, audiobooks, and games and download free podcasts all at the
-                                    iTunes Store. And you can import your own music, manage your whole media library,
-                                    and sync your iPod or iPhone with ease.</p>
+                                    {{ product.description}}</p>
+
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab-review">
+                        <!-- <div class="tab-pane" id="tab-review">
                             <form class="form-horizontal" id="form-review">
                                 <div id="review"></div>
                                 <h2>Write a review</h2>
@@ -252,7 +226,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

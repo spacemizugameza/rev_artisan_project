@@ -1,10 +1,16 @@
 from cgitb import html
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from products.models import Product
 
 @login_required
 def home_p(request):
-    return render(request,'Rev_Artisan/home.html')
+
+    context = {}
+    products = Product.objects.all()
+    context['products'] = products
+
+    return render(request,'Rev_Artisan/home.html',context)
 
 @login_required
 def about_p(request):

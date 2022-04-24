@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'Rev_Artisan.apps.RevArtisanConfig',
     'users.apps.UsersConfig',
     'products.apps.ProductsConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -148,3 +149,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = 'home-page'
 LOGIN_URL = 'login'
+
+RAZORPAY_API_KEY = 'rzp_test_0Yt8PmMs4GMGQy'
+RAZORPAY_API_SECRET_KEY = 'DnD2DY0DToIMeHpgpUTZMpKz'

@@ -818,15 +818,15 @@ header .box-inner-inner {
 }
 
 #logo {
-    padding: 14px 0;
+    padding: 14px 0px;
     position: relative;
     z-index: 1;
     display: inline-block;
     vertical-align: top;
-    float: left;
+    padding-right: 60px;
 }
 
-#logo h1 {
+#logo h2 {
     margin: 1.5rem 0;
 }
 
@@ -2404,6 +2404,7 @@ header .box-inner-inner {
         float: left;
         padding-top: 10px;
         padding-left: 40px;
+        padding-right: 40px;
         padding-bottom: 10px;
         max-width: 190px;
     }

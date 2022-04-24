@@ -9,7 +9,7 @@
         <div id="content" class="col-sm-12">
             <h1>Shopping Cart
             </h1>
-            <form action="{% url 'update-cart' %}" method='post' enctype="multipart/form-data">
+            <form action="{% url 'update-cart' %}" method="post"  enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="table-responsive">
                     <table class="table table-bordered">
